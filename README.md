@@ -1,12 +1,28 @@
-# Storybook 8 setup for version 9 upgrade issue reproducer
+# Reproducer for Storybook 9 Issues
 
-Installed storybook like this:
+**Issue**: storybook upgrade added `eslint-plugin-storybook` version `9.0.12`, but probably should be `^9.0.12` (with caret).
+
+**Reporoducer**:
+
+Start with `storybook-8` branch.
+
+```sh
+git checkout storybook-8
+```
+
+Upgrade:
+
+```sh
+npx storybook@latest upgrade
+```
+
+## Scaffold Info
+
+Previously installed Storybook 8 like this:
 
 ```sh
 npx storybook@8 init
 ```
-
-## Scaffold Info
 
 Initial Vite Vue scaffold was created by,
 
